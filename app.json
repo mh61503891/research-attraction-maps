@@ -1,0 +1,23 @@
+{
+  "name": "Research-Attraction Maps",
+  "description": "Research-Attraction Maps",
+  "repository": "https://github.com/mh61503891/research-attraction-maps",
+  "website": "https://github.com/mh61503891/research-attraction-maps",
+  "scripts": {
+    "postdeploy": "bundle exec rails db:migrate"
+  },
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }, {
+    "url": "heroku/ruby"
+  }],
+  "addons": ["heroku-postgresql"],
+  "success_url": "/",
+  "env": {
+    "RAILS_FORCE_SSL": {
+      "value": "enabled"
+    },
+    "CINII_API_KEY": {},
+    "RESAS_API_KEY": {}
+  }
+}
