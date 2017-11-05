@@ -56,15 +56,18 @@ export default {
           }
         })
         .then(function(response) {
-
-            vm.researches = []
+          vm.researches = []
             response.data.forEach((research) => {
               vm.researches.push(research)
             })
-
         })
         .catch(function(error) {
           // TODO
+          vm.researches.push({
+            institution: '',
+            name: '',
+            member: []
+          })
           console.log(error);
         })
 

@@ -44,7 +44,14 @@ class KAKEN
     end
     return entries
   rescue REXML::ParseException => e
-    return {message: e.to_s}
+    return [
+      {
+        title: 'N/A',
+        institution: 'M/A',
+        member: [],
+        message: e.to_s
+      }
+    ]
   end
 
   class API
