@@ -8,10 +8,10 @@
 
 以下のAPIを使用しています。
 
-* [RESAS API](https://opendata.resas-portal.go.jp/)で取得したキーを指定します。
+* [RESAS API](https://opendata.resas-portal.go.jp/)
 	* 都道府県一覧
 	* 観光資源情報
-* [KAKEN API](https://support.nii.ac.jp/ja/kaken/api/api_outline)で取得したキーを指定します。
+* [KAKEN API](https://support.nii.ac.jp/ja/kaken/api/api_outline)
 	* 科学研究費助成事業データベース
 
 ## インストール
