@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: redis://localhost:6379/1
-  channel_prefix: research-attraction-maps_production
+  channel_prefix: research_attraction_maps_production
